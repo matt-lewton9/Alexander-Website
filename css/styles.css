@@ -1,7 +1,7 @@
 :root{
-  --navColor: rgb(111, 111, 111);
-  --mainAccent: rgb(128, 177, 220);
-  --accent2:  rgb(7, 113, 46);
+  --navColor: rgb(45, 152, 246);
+  --mainAccent: rgb(97, 108, 133);
+  --accent2:  rgb(0, 194, 211);
   --mainBackground: rgb(216, 216, 216);
   --textColor: rgb(42, 42, 42);
 }
@@ -14,7 +14,7 @@ html{
 body{
   background-color: var(--mainBackground);
   margin: 0px;
-  font-family: "Georgia";
+  font-family: "Merriweather";
   color: var(--textColor);
   min-height: 100%;
   display: flex;
@@ -85,7 +85,7 @@ body{
   gap: 16px;
   justify-content: center;
   align-items: stretch;
-  flex-direction: row;
+  flex-direction: column;
   align-content: stretch;
   flex-wrap: nowrap;
 }
@@ -113,7 +113,7 @@ body{
   flex-grow: 2;
   align-items: stretch;
   overflow: hidden;
-  justify-content: end;
+  justify-content: flex-start;  
 }
 
 .navIcon{
