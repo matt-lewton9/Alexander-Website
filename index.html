@@ -1,0 +1,26 @@
+---
+layout: default
+title: Home
+---
+
+<div class="mainSplit">
+    <div class="mainSplitBox" style="flex-shrink: 1.2;">
+        <a href="{{ "pages/about.html" | relative_url  }}""><h1 class="maintext" >About Me</h1></a>
+        {% include bio.html %}
+    </div>
+    <div class="mainSplitBox">
+        <a href="{{ "pages/blog.html" | relative_url  }}"><h1 class="maintext">Latest Projects</h1></a>
+        <div style="display: flex; flex-direction: column">
+            {%- for post in site.posts limit:2 -%}
+            <div>
+                {%- include excerpt.html -%}
+            </div>
+            {%- endfor -%}
+        
+            <div>
+            <a href="{{ "pages/blog.html" | relative_url  }}"><h2 class="link more" style="padding-left: 16px;">More!</h2></a>
+        </div>
+    
+        </div>
+    </div>
+</div>

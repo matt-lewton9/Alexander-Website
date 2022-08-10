@@ -1,0 +1,14 @@
+title: Alexander Lewton Poolitical Analysis
+description: > 
+  Political blog and portfolio website for my brother.
+
+github_username: matt-lewton9
+
+imgPath: assets/images/
+
+exclude:
+- Gemfile
+- Gemfile.lock
+- LICENSE
+- README.md
+- .gitignore

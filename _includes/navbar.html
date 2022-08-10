@@ -1,0 +1,19 @@
+<div class="navbar">
+    <a  href="{{ "index.html" | relative_url  }}" style="width: fit-content;">Alexander's Political Analysis Bonanza</a>
+    <div class="navbarS" id = "menu"> 
+      <a href="{{ "pages/about.html" | relative_url  }}">About</a> 
+    </div>
+
+    <a href="javascript:void(0);" onclick="showNav()" class="navIcon"><img src="{{ "assets/images/menu.png" | relative_url }}"></i></a>
+</div>
+
+<script>
+    function showNav() {
+      var x = document.getElementById("menu");
+      if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+}
+</script>

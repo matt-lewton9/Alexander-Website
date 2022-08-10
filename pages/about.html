@@ -1,0 +1,17 @@
+---
+layout: default
+title: About
+---
+<body >
+    <h1>About Me</h1>
+    {% include bio.html %}
+    <h2>Contact Information</h2>
+    
+    <div style="display: flex; flex-direction:column">
+        <p>email: alexander.lewton9@gmail.com<br>phone: 301-846-8286</p>
+        <div style="display:flex; gap:8px;">
+            <a class="link" href="{{ "assets/misc/resume.pdf" | relative_url }}"><h3>Resume</h3></a>
+        </div>
+     </div>
+
+</body>

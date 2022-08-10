@@ -1,0 +1,423 @@
+:root{
+  --navColor: rgb(111, 111, 111);
+  --mainAccent: rgb(128, 177, 220);
+  --accent2:  rgb(7, 113, 46);
+  --mainBackground: rgb(216, 216, 216);
+  --textColor: rgb(42, 42, 42);
+}
+
+html{
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  background-color: var(--mainBackground);
+  margin: 0px;
+  font-family: "Georgia";
+  color: var(--textColor);
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y:auto;
+  height: 50vh;
+  background-color: var(--navColor);
+}
+
+.galleryImg{
+  height: 40vh;
+  flex-grow: 1;
+  text-align: center;
+  position: relative;
+}
+
+.galleryImg img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+
+.galleryText{
+  color: var(--textColor);
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  font-size: 40px;
+}
+
+.galleryImg:hover > h2{
+  display: block;
+}
+
+.galleryImg:hover > img{ 
+  opacity: .3;
+}
+
+.galleryHeader{
+  background-color: var(--navColor);
+  padding: 16px;
+  margin-top: 16px;
+  margin-bottom: 0px;
+}
+
+.maintext{
+  color:var(--textColor)
+}
+
+.main
+{
+  color: var(--textColor);
+  margin: 0px 16px 16px 16px;
+
+}
+
+.mainSplit{
+  margin-top: 16px;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: row;
+  align-content: stretch;
+  flex-wrap: nowrap;
+}
+
+.mainSplitBox{
+  background-color: var(--navColor);
+  padding: 16px;
+}
+
+.navbar {
+  background-color: var(--navColor);
+  display: flex;
+  align-items: baseline;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  overflow: hidden;
+
+}
+
+.navbarS {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 2;
+  align-items: stretch;
+  overflow: hidden;
+  justify-content: end;
+}
+
+.navIcon{
+  display: none;
+  width: 0px;
+  height: 0px;
+}
+
+.navbar a {
+  font-size: 20px;
+  color: var(--textColor);
+  text-align: center;
+  padding: 32px 16px;
+  text-decoration: none;
+}
+
+.topicName {
+  font-size: 32px;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+
+.projects figure{
+  color: var(--textColor);
+  font-size: 24px;
+  text-align: center;
+  padding: 16px;
+}
+
+.projects a figure img {
+  width: 500px;
+  height: 350px;
+  object-fit: scale-down;
+  
+}
+
+.projects figure:hover{
+  background-color: var(--navColor);
+}
+
+.projecs a:hover, a:visited, a:link, a:active{
+  text-decoration: none;
+}
+
+.projectdate{
+  font-size: 16px;
+  font-style: italic;
+}
+
+.projImg{
+  width: 300px;
+  height: 250px;
+  object-fit: scale-down;
+}
+
+.articleImg{
+  max-width: 450px;
+  max-height: 400px;
+  object-fit: scale-down;
+  float: right;
+  padding: 0px, 16px;
+}
+
+.articleImgMain{
+  max-width: 450px;
+  max-height: 400px;
+  object-fit: scale-down;
+  float: right;
+  padding: 16px;
+  padding-bottom: 0px;
+}
+
+.imgCptnBox{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  float:right;
+}
+
+.articleCaption{
+  text-align: center;
+  white-space: normal;
+  padding: 16px;
+  padding-top: 0px;
+}
+
+.vids{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+.headshot{
+  object-fit: scale-down;
+  padding: 0px 16px 16px 0px;
+  float:left;
+  max-width:256px;
+}
+
+.excerpt{
+  height: 25vh;
+  padding: 24px;
+  width: 90%;
+}
+
+.excerptImg{
+  object-fit: scale-down;
+  float:right;
+  padding:16px;
+  height: 25vh;
+  max-height: 100%;
+}
+
+.excerpt p{
+  width: 70%;
+}
+
+.navbar a:hover {
+  background-color: var(--mainAccent);
+}
+
+.link {
+  color:var(--mainAccent);
+}
+
+.link:hover, a link:hover{
+  color:var(--accent2);
+}
+
+.logo :hover{
+  background-color: var(--navColor);
+}
+
+footer {
+  background-color: var(--navColor);
+  color: var(--textColor);
+  padding: 16px;
+  font-size: 14px;
+  margin-top: auto;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--navColor); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--mainAccent); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent2); 
+}
+
+@media screen and (max-width: 700px){
+  /* place here CSS targeted at iPads and smaller, including iPhones and small hand-held devices */
+  
+  .main{
+    overflow-x: hidden;
+  }
+
+  .navbar {
+    display: block;
+    width: 100%;
+    margin: 0px;
+  }
+
+  .navbarS{
+    display: none;
+    width: 100%;
+  }
+
+  .navbarS a{
+    display: block;
+    width: 100%;
+  }
+
+  .navbar a {
+    display: block;
+    text-align: left;
+    overflow: hidden;
+  }
+
+  .navIcon{ 
+    height: 32px;
+    width: 32px;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .navIcon img{
+    height: 100%;
+    width: 100%;
+  }
+
+  .galleryText{
+    display:block;
+    padding: 8px 0px;
+    background: rgb(34, 34, 34, .7);
+    width: 100%;
+    top:60%;
+    font-size:32px;
+  }
+
+  .headshotBox{
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  }
+
+  h1{
+    text-align: center;
+    margin-bottom: 0px;
+  }
+
+  .mainSplit{
+    flex-direction: column;
+  }
+
+  .maintext{
+    text-align: center;
+  }
+
+  .articleImg, .articleImgMain{
+    max-width: 80%;
+    max-height: 50%;
+    float: none;
+  }
+
+  .headshot{
+    max-width: 250px;
+    padding:16px;
+  }
+  
+  .projImg{
+    max-width: 80vw;
+    padding: 0px;
+  }
+
+  .projects a{
+    height: fit-content;
+  }
+
+  .projects figure{
+    height: fit-content;
+  }
+
+  .projects a figure img{
+    max-height: 30%;
+    height: fit-content;
+  }
+
+  .projectlabel{
+  padding-top: 8px;
+  }
+
+  image.png{
+    max-width: 90%;
+  }
+
+  video {
+    width: 100%    !important;
+  }
+
+  .excerpt{
+    text-align:center;
+    height: 40vh;
+  }
+    
+  .excerpt p{
+      display:none;
+    }
+    
+  .excerpt img{
+      float: none;
+    }
+
+  .more{
+    text-align: center;
+    padding-top: 32px;
+    }
+
+  .footer{
+    padding: 0px;
+  }
+
+}
