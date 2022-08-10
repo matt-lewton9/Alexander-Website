@@ -6,10 +6,13 @@ title: Home
 <div class="mainSplit">
     <div class="mainSplitBox">
         <a href="{{ "pages/about.html" | relative_url  }}""><h1 class="maintext" >About Me</h1></a>
+
+        <img src="{{"assets/images/headshot.JPG" | relative_url }}" class="headshot", style="float:none;">
+
         {% include bio.html %}
     </div>
     <div class="mainSplitBox">
-        <a href="{{ "pages/blog.html" | relative_url  }}"><h1 class="maintext">Posts</h1></a>
+        <a href="{{ "pages/blog.html" | relative_url  }}"><h1 class="maintext">Political Anaysis Posts</h1></a>
         <div style="display: flex; flex-direction: column">
             {%- for post in site.posts limit:5 -%}
             <div>
