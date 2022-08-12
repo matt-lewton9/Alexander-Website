@@ -227,7 +227,7 @@ body{
 .excerpt{
   padding: 24px;
   width: 90%;
-}
+  min-height: 25vh;}
 
 .excerptImg{
   object-fit: scale-down;
