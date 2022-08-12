@@ -1,8 +1,8 @@
 :root{
   --navColor: #a3a3a3;
-  --mainAccent: rgb(87 166 190);
+  --mainAccent: rgb(16 114 143);
   --accent2:  rgb(86 136 160);
-  --mainBackground: rgb(219 219 219);
+  --mainBackground: rgb(176 176 176);
   --textColor: #4e4e4e;
 }
 
@@ -14,7 +14,7 @@ html{
 body{
   background-color: var(--mainBackground);
   margin: 0px;
-  font-family: "Merriweather";
+  font-family: "Georgia";
   color: var(--textColor);
   min-height: 100%;
   display: flex;
@@ -87,6 +87,7 @@ body{
   align-items: stretch;
   align-content: stretch;
   flex-wrap: nowrap;
+  flex-direction: row-reverse;
 }
 
 .mainSplitBox{
@@ -224,7 +225,6 @@ body{
 }
 
 .excerpt{
-  height: 25vh;
   padding: 24px;
   width: 90%;
 }
