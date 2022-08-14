@@ -209,6 +209,13 @@ body{
   padding-top: 0px;
 }
 
+.articleImgBox{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
 .vids{
   display: flex;
   justify-content: center;
