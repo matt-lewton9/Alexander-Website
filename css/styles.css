@@ -367,11 +367,16 @@ footer {
     max-width: 80%;
     max-height: 50%;
     float: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
   }
+  
 
   .headshot{
     max-width: 250px;
     padding:16px;
+    float:none;
   }
   
   .projImg{
